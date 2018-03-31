@@ -1,0 +1,10 @@
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\bin\Debug\ControleMedicoFamiliar.exe.config
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\bin\Debug\ControleMedicoFamiliar.exe
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\bin\Debug\ControleMedicoFamiliar.pdb
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.csprojResolveAssemblyReference.cache
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.Form1.resources
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.Properties.Resources.resources
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.csproj.GenerateResource.Cache
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.csproj.CoreCompileInputs.cache
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.exe
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.pdb
