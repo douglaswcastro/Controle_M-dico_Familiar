@@ -16,5 +16,19 @@ namespace ControleMedicoFamiliar
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            var nome = txtNome.Text;
+            var usuario = txtUsuario.Text;
+            var senha = txtSenha.Text;
+
+
+        }
     }
 }
