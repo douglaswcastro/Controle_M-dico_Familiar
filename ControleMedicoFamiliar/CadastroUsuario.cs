@@ -28,7 +28,7 @@ namespace ControleMedicoFamiliar
             var usuario = txtUsuario.Text;
             var senha = txtSenha.Text;
 
-
+            Close();
         }
     }
 }

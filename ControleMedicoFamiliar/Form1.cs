@@ -27,7 +27,9 @@ namespace ControleMedicoFamiliar
             var usuario = txtusuario.Text;
             var senha = txtsenha.Text;
 
-
+            HomePage newHomePage = new HomePage();
+            newHomePage.ShowDialog();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -37,7 +39,11 @@ namespace ControleMedicoFamiliar
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
-
+            
+            Form1 newForm1 = new Form1();
+            newForm1.Close();
+            CadastroUsuario newCadastroUsuario = new CadastroUsuario();
+            newCadastroUsuario.ShowDialog();
         }
     }
 }
