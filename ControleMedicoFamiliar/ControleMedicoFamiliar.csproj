@@ -82,8 +82,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastroFamiliares.resx">
+      <DependentUpon>CadastroFamiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroMedicos.resx">
+      <DependentUpon>CadastroMedicos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroUsuario.resx">
       <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroVacinas.resx">
+      <DependentUpon>CadastroVacinas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
