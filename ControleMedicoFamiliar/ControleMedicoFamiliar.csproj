@@ -44,17 +44,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroFamiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroFamiliares.Designer.cs">
+      <DependentUpon>CadastroFamiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroMedicos.Designer.cs">
+      <DependentUpon>CadastroMedicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CadastroUsuario.Designer.cs">
       <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroVacinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroVacinas.Designer.cs">
+      <DependentUpon>CadastroVacinas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
