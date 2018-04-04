@@ -60,6 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Italic);
             this.label1.Location = new System.Drawing.Point(223, 9);
             this.label1.Name = "label1";
@@ -70,6 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(198, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
@@ -79,7 +81,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(198, 100);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(198, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 27;
@@ -90,7 +93,7 @@
             this.cbPessoas.FormattingEnabled = true;
             this.cbPessoas.Items.AddRange(new object[] {
             "Você"});
-            this.cbPessoas.Location = new System.Drawing.Point(201, 76);
+            this.cbPessoas.Location = new System.Drawing.Point(211, 75);
             this.cbPessoas.Name = "cbPessoas";
             this.cbPessoas.Size = new System.Drawing.Size(269, 21);
             this.cbPessoas.TabIndex = 28;
@@ -109,6 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.HOME_1800x1200_c;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.cbMedicos);
             this.Controls.Add(this.cbPessoas);

@@ -15,6 +15,7 @@ namespace ControleMedicoFamiliar
         {
             this.nome = nome;
             this.tipo = tipo;
+
         }
     }
 }

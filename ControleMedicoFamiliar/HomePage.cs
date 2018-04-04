@@ -17,15 +17,9 @@ namespace ControleMedicoFamiliar
             InitializeComponent();
         }
 
-        private void lvFamiliares_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCadastrarVacina_Click(object sender, EventArgs e)
         {
-            CadastroVacinas cadastroVacinas = new CadastroVacinas();
-            cadastroVacinas.ShowDialog();
         }
 
         private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
@@ -42,19 +36,30 @@ namespace ControleMedicoFamiliar
 
         private void btnregvacinas_Click(object sender, EventArgs e)
         {
-            RegistroVacinas registroVacinas = new RegistroVacinas();
-            registroVacinas.ShowDialog();
+           
         }
 
         private void btnregconsultas_Click(object sender, EventArgs e)
         {
-            RegistroConsultas registroConsultas = new RegistroConsultas();
-            registroConsultas.ShowDialog();
+            string pessoa = cbPessoaConsulta.SelectedText;
+            string medico = cbMedicos.SelectedText;
+
         }
 
         private void HomePage_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCadatrarVacina_Click(object sender, EventArgs e)
+        {
+            CadastroVacinas cadastroVacinas = new CadastroVacinas();
+            cadastroVacinas.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
