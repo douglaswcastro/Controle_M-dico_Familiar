@@ -56,18 +56,13 @@
     <Compile Include="CadastroMedicos.Designer.cs">
       <DependentUpon>CadastroMedicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CadastroUsuario.Designer.cs">
-      <DependentUpon>CadastroUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="CadastroVacinas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CadastroVacinas.Designer.cs">
       <DependentUpon>CadastroVacinas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Familiares.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,16 +75,27 @@
     <Compile Include="HomePage.Designer.cs">
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medicos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroConsultas.Designer.cs">
+      <DependentUpon>RegistroConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroVacinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroVacinas.Designer.cs">
+      <DependentUpon>RegistroVacinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacinas.cs" />
     <EmbeddedResource Include="CadastroFamiliares.resx">
       <DependentUpon>CadastroFamiliares.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroMedicos.resx">
       <DependentUpon>CadastroMedicos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CadastroUsuario.resx">
-      <DependentUpon>CadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroVacinas.resx">
       <DependentUpon>CadastroVacinas.cs</DependentUpon>
@@ -109,6 +115,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistroConsultas.resx">
+      <DependentUpon>RegistroConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroVacinas.resx">
+      <DependentUpon>RegistroVacinas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -10,6 +10,7 @@ C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\Co
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.pdb
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.CadastroFamiliares.resources
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.CadastroMedicos.resources
-C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.CadastroUsuario.resources
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.CadastroVacinas.resources
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.HomePage.resources
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.RegistroConsultas.resources
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.RegistroVacinas.resources

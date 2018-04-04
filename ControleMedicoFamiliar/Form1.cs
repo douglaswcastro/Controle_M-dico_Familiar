@@ -39,11 +39,8 @@ namespace ControleMedicoFamiliar
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
+         
             
-            Form1 newForm1 = new Form1();
-            newForm1.Close();
-            CadastroUsuario newCadastroUsuario = new CadastroUsuario();
-            newCadastroUsuario.ShowDialog();
         }
     }
 }

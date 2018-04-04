@@ -16,5 +16,21 @@ namespace ControleMedicoFamiliar
         {
             InitializeComponent();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+            string tipo = txtTipo.Text;
+            Vacinas vacina = new Vacinas(nome,tipo);
+
+            List<Vacinas> vacinas = new List<Vacinas>();
+            vacinas.Add(vacina);
+        }
     }
 }
