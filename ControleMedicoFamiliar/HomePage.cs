@@ -17,11 +17,6 @@ namespace ControleMedicoFamiliar
             InitializeComponent();
         }
 
-
-        private void btnCadastrarVacina_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
         {
             CadastroFamiliares cadastroFamiliares = new CadastroFamiliares();
@@ -32,6 +27,7 @@ namespace ControleMedicoFamiliar
         {
             CadastroMedicos cadastroMedicos = new CadastroMedicos();
             cadastroMedicos.ShowDialog();
+            this.Close();
         }
 
         private void btnregvacinas_Click(object sender, EventArgs e)
@@ -55,6 +51,7 @@ namespace ControleMedicoFamiliar
         {
             CadastroVacinas cadastroVacinas = new CadastroVacinas();
             cadastroVacinas.ShowDialog();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

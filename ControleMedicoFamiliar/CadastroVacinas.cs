@@ -30,6 +30,8 @@ namespace ControleMedicoFamiliar
             Vacinas vacina = new Vacinas(nome, tipo);
 
             vacinas.Add(vacina);
+
+            Close();
         }
     }
 }
