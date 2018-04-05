@@ -43,7 +43,7 @@
             this.btnCancelar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.cancel_1294426_960_720;
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancelar.Location = new System.Drawing.Point(622, 361);
+            this.btnCancelar.Location = new System.Drawing.Point(371, 131);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(46, 39);
             this.btnCancelar.TabIndex = 24;
@@ -58,7 +58,7 @@
             this.btnCadastrar.CausesValidation = false;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCadastrar.Location = new System.Drawing.Point(674, 361);
+            this.btnCadastrar.Location = new System.Drawing.Point(423, 131);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(45, 39);
             this.btnCadastrar.TabIndex = 23;
@@ -70,10 +70,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 18);
+            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
+            this.label2.Location = new System.Drawing.Point(15, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 23);
+            this.label2.Size = new System.Drawing.Size(73, 23);
             this.label2.TabIndex = 26;
             this.label2.Text = "Pessoa:";
             // 
@@ -81,10 +81,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label3.Location = new System.Drawing.Point(12, 78);
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
+            this.label3.Location = new System.Drawing.Point(15, 78);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 23);
+            this.label3.Size = new System.Drawing.Size(70, 23);
             this.label3.TabIndex = 27;
             this.label3.Text = "Médico";
             // 
@@ -101,8 +101,6 @@
             // cbMedicos
             // 
             this.cbMedicos.FormattingEnabled = true;
-            this.cbMedicos.Items.AddRange(new object[] {
-            "Você"});
             this.cbMedicos.Location = new System.Drawing.Point(15, 104);
             this.cbMedicos.Name = "cbMedicos";
             this.cbMedicos.Size = new System.Drawing.Size(453, 21);
@@ -114,13 +112,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(731, 412);
+            this.ClientSize = new System.Drawing.Size(478, 181);
             this.Controls.Add(this.cbMedicos);
             this.Controls.Add(this.cbPessoas);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCadastrar);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistroConsultas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -40,8 +40,6 @@
             // cbVacina
             // 
             this.cbVacina.FormattingEnabled = true;
-            this.cbVacina.Items.AddRange(new object[] {
-            "Você"});
             this.cbVacina.Location = new System.Drawing.Point(15, 96);
             this.cbVacina.Name = "cbVacina";
             this.cbVacina.Size = new System.Drawing.Size(453, 21);
@@ -61,22 +59,22 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label3.Location = new System.Drawing.Point(12, 70);
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
+            this.label3.Location = new System.Drawing.Point(21, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 23);
+            this.label3.Size = new System.Drawing.Size(75, 23);
             this.label3.TabIndex = 34;
-            this.label3.Text = "Vacina";
+            this.label3.Text = "Vacina:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label2.Location = new System.Drawing.Point(12, 18);
+            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
+            this.label2.Location = new System.Drawing.Point(21, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 23);
+            this.label2.Size = new System.Drawing.Size(73, 23);
             this.label2.TabIndex = 33;
             this.label2.Text = "Pessoa:";
             // 
@@ -87,7 +85,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(619, 361);
+            this.button1.Location = new System.Drawing.Point(368, 132);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(47, 39);
             this.button1.TabIndex = 38;
@@ -102,7 +100,7 @@
             this.button2.CausesValidation = false;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(672, 361);
+            this.button2.Location = new System.Drawing.Point(421, 132);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 39);
             this.button2.TabIndex = 37;
@@ -116,13 +114,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(731, 412);
+            this.ClientSize = new System.Drawing.Size(475, 180);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cbVacina);
             this.Controls.Add(this.cbPessoas);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistroVacinas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

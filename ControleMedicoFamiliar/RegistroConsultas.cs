@@ -30,9 +30,7 @@ namespace ControleMedicoFamiliar
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            HomePage home = new HomePage();
-            home.ShowDialog();
+            this.Close();
         }
 
         private void RegistroConsultas_Load(object sender, EventArgs e)

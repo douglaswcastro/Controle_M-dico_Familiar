@@ -41,7 +41,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(2, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(707, 192);
+            this.label1.Size = new System.Drawing.Size(707, 256);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -52,7 +52,7 @@
             this.btnFechar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.cancel_1294426_960_720;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFechar.Location = new System.Drawing.Point(672, 363);
+            this.btnFechar.Location = new System.Drawing.Point(657, 228);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(47, 37);
             this.btnFechar.TabIndex = 1;
@@ -66,10 +66,12 @@
             this.AutoSize = true;
             this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.depositphotos_10595408_stock_photo_white_show_room_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(731, 412);
+            this.ClientSize = new System.Drawing.Size(716, 283);
             this.ControlBox = false;
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.label1);
+            this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ajuda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajuda";

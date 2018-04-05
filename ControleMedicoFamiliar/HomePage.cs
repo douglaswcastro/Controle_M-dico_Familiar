@@ -58,25 +58,21 @@ namespace ControleMedicoFamiliar
         {
             CadastroVacinas cadastroVacinas = new CadastroVacinas();
             cadastroVacinas.ShowDialog();
-            this.Close();
         }
 
         private void médicosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadastroMedicos cadastroMedicos = new CadastroMedicos();
             cadastroMedicos.ShowDialog();
-            this.Close();
         }
 
         private void familiaresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CadastroFamiliares cadastroFamiliares = new CadastroFamiliares();
             cadastroFamiliares.ShowDialog();
-            this.Close();
         }
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             RegistroConsultas view = new RegistroConsultas();
             view.Show();
         }
