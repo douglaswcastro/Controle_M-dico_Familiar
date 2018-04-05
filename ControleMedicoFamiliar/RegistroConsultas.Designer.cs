@@ -53,7 +53,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.saveas_51651;
+            this.btnCadastrar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.Save_37110;
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCadastrar.CausesValidation = false;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -82,7 +82,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label3.Location = new System.Drawing.Point(12, 81);
+            this.label3.Location = new System.Drawing.Point(12, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 27;
@@ -103,7 +103,7 @@
             this.cbMedicos.FormattingEnabled = true;
             this.cbMedicos.Items.AddRange(new object[] {
             "Você"});
-            this.cbMedicos.Location = new System.Drawing.Point(15, 107);
+            this.cbMedicos.Location = new System.Drawing.Point(15, 104);
             this.cbMedicos.Name = "cbMedicos";
             this.cbMedicos.Size = new System.Drawing.Size(453, 21);
             this.cbMedicos.TabIndex = 29;
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.HOME_1800x1200_c;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.cbMedicos);
@@ -124,7 +124,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistroConsultas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RegistroConsultas";
+            this.Text = "Registro de Consultas";
             this.Load += new System.EventHandler(this.RegistroConsultas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

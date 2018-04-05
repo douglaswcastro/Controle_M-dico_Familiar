@@ -56,7 +56,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label3.Location = new System.Drawing.Point(8, 73);
+            this.label3.Location = new System.Drawing.Point(12, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 23);
             this.label3.TabIndex = 18;
@@ -67,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label2.Location = new System.Drawing.Point(8, 14);
+            this.label2.Location = new System.Drawing.Point(12, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 23);
             this.label2.TabIndex = 17;
@@ -90,7 +90,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.saveas_51651;
+            this.btnCadastrar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.Save_37110;
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.HOME_1800x1200_c;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.btnCancelar);
@@ -115,6 +115,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroMedicos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

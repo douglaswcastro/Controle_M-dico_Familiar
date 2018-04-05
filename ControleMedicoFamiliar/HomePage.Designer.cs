@@ -36,6 +36,9 @@
             this.NomeMedico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Especialidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgVacinas = new System.Windows.Forms.DataGridView();
+            this.Pessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Vacina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vacinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,9 +49,6 @@
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFechar = new System.Windows.Forms.Button();
-            this.Pessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vacina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsultas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVacinas)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -57,24 +57,22 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gainsboro;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
             this.label5.Location = new System.Drawing.Point(267, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 25);
+            this.label5.Size = new System.Drawing.Size(166, 23);
             this.label5.TabIndex = 34;
             this.label5.Text = "Consultas Registradas";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Gainsboro;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
             this.label6.Location = new System.Drawing.Point(279, 204);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(156, 25);
+            this.label6.Size = new System.Drawing.Size(154, 23);
             this.label6.TabIndex = 35;
             this.label6.Text = "Vacinas Registradas";
             // 
@@ -118,6 +116,24 @@
             this.dtgVacinas.Name = "dtgVacinas";
             this.dtgVacinas.Size = new System.Drawing.Size(707, 125);
             this.dtgVacinas.TabIndex = 100;
+            // 
+            // Pessoa
+            // 
+            this.Pessoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Pessoa.HeaderText = "Pessoa";
+            this.Pessoa.Name = "Pessoa";
+            // 
+            // Vacina
+            // 
+            this.Vacina.HeaderText = "Vacina";
+            this.Vacina.Name = "Vacina";
+            // 
+            // Tipo
+            // 
+            this.Tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Width = 53;
             // 
             // menuStrip1
             // 
@@ -206,29 +222,11 @@
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // Pessoa
-            // 
-            this.Pessoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Pessoa.HeaderText = "Pessoa";
-            this.Pessoa.Name = "Pessoa";
-            // 
-            // Vacina
-            // 
-            this.Vacina.HeaderText = "Vacina";
-            this.Vacina.Name = "Vacina";
-            // 
-            // Tipo
-            // 
-            this.Tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.Width = 53;
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.HOME_1800x1200_c;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.btnFechar);

@@ -92,11 +92,12 @@
             this.button1.Size = new System.Drawing.Size(47, 39);
             this.button1.TabIndex = 38;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.saveas_51651;
+            this.button2.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.Save_37110;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.CausesValidation = false;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -107,12 +108,13 @@
             this.button2.TabIndex = 37;
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RegistroVacinas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.HOME_1800x1200_c;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.button1);
