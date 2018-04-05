@@ -34,5 +34,10 @@ namespace ControleMedicoFamiliar
             HomePage home = new HomePage();
             home.ShowDialog();
         }
+
+        private void RegistroConsultas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

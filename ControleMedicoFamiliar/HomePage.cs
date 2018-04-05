@@ -15,6 +15,7 @@ namespace ControleMedicoFamiliar
         public HomePage()
         {
             InitializeComponent();
+            
         }
 
         private void btnCadastrarFamiliar_Click(object sender, EventArgs e)

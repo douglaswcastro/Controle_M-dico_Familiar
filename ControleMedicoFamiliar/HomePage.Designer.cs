@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dtgConsultas = new System.Windows.Forms.DataGridView();
+            this.ConsultaPessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NomeMedico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Especialidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgVacinas = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,11 +47,8 @@
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFechar = new System.Windows.Forms.Button();
             this.Pessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NomeVacina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TipoVacina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ConsultaPessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NomeMedico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Especialidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Vacina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsultas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVacinas)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -56,22 +57,24 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.BackColor = System.Drawing.Color.Gainsboro;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label5.Location = new System.Drawing.Point(267, 35);
+            this.label5.Location = new System.Drawing.Point(267, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 23);
+            this.label5.Size = new System.Drawing.Size(168, 25);
             this.label5.TabIndex = 34;
             this.label5.Text = "Consultas Registradas";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.BackColor = System.Drawing.Color.Gainsboro;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
-            this.label6.Location = new System.Drawing.Point(267, 191);
+            this.label6.Location = new System.Drawing.Point(279, 204);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 23);
+            this.label6.Size = new System.Drawing.Size(156, 25);
             this.label6.TabIndex = 35;
             this.label6.Text = "Vacinas Registradas";
             // 
@@ -88,15 +91,30 @@
             this.dtgConsultas.Size = new System.Drawing.Size(707, 121);
             this.dtgConsultas.TabIndex = 43;
             // 
+            // ConsultaPessoa
+            // 
+            this.ConsultaPessoa.HeaderText = "Pessoa";
+            this.ConsultaPessoa.Name = "ConsultaPessoa";
+            // 
+            // NomeMedico
+            // 
+            this.NomeMedico.HeaderText = "Médico";
+            this.NomeMedico.Name = "NomeMedico";
+            // 
+            // Especialidade
+            // 
+            this.Especialidade.HeaderText = "Especialidade";
+            this.Especialidade.Name = "Especialidade";
+            // 
             // dtgVacinas
             // 
             this.dtgVacinas.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgVacinas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Pessoa,
-            this.NomeVacina,
-            this.TipoVacina});
+            this.Vacina,
+            this.Tipo});
             this.dtgVacinas.Cursor = System.Windows.Forms.Cursors.No;
-            this.dtgVacinas.Location = new System.Drawing.Point(12, 217);
+            this.dtgVacinas.Location = new System.Drawing.Point(12, 232);
             this.dtgVacinas.Name = "dtgVacinas";
             this.dtgVacinas.Size = new System.Drawing.Size(707, 125);
             this.dtgVacinas.TabIndex = 100;
@@ -127,21 +145,21 @@
             // vacinasToolStripMenuItem
             // 
             this.vacinasToolStripMenuItem.Name = "vacinasToolStripMenuItem";
-            this.vacinasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.vacinasToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.vacinasToolStripMenuItem.Text = "Vacinas";
             this.vacinasToolStripMenuItem.Click += new System.EventHandler(this.vacinasToolStripMenuItem_Click);
             // 
             // médicosToolStripMenuItem
             // 
             this.médicosToolStripMenuItem.Name = "médicosToolStripMenuItem";
-            this.médicosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.médicosToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.médicosToolStripMenuItem.Text = "Médicos";
             this.médicosToolStripMenuItem.Click += new System.EventHandler(this.médicosToolStripMenuItem_Click);
             // 
             // familiaresToolStripMenuItem
             // 
             this.familiaresToolStripMenuItem.Name = "familiaresToolStripMenuItem";
-            this.familiaresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.familiaresToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.familiaresToolStripMenuItem.Text = "Familiares";
             this.familiaresToolStripMenuItem.Click += new System.EventHandler(this.familiaresToolStripMenuItem_Click);
             // 
@@ -157,14 +175,14 @@
             // vacinasToolStripMenuItem1
             // 
             this.vacinasToolStripMenuItem1.Name = "vacinasToolStripMenuItem1";
-            this.vacinasToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.vacinasToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
             this.vacinasToolStripMenuItem1.Text = "Vacinas";
             this.vacinasToolStripMenuItem1.Click += new System.EventHandler(this.vacinasToolStripMenuItem1_Click);
             // 
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem.Text = "Consultas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
@@ -194,38 +212,24 @@
             this.Pessoa.HeaderText = "Pessoa";
             this.Pessoa.Name = "Pessoa";
             // 
-            // NomeVacina
+            // Vacina
             // 
-            this.NomeVacina.HeaderText = "Nome Vacina";
-            this.NomeVacina.Name = "NomeVacina";
+            this.Vacina.HeaderText = "Vacina";
+            this.Vacina.Name = "Vacina";
             // 
-            // TipoVacina
+            // Tipo
             // 
-            this.TipoVacina.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.TipoVacina.HeaderText = "Tipo Vacina";
-            this.TipoVacina.Name = "TipoVacina";
-            this.TipoVacina.Width = 89;
-            // 
-            // ConsultaPessoa
-            // 
-            this.ConsultaPessoa.HeaderText = "Pessoa";
-            this.ConsultaPessoa.Name = "ConsultaPessoa";
-            // 
-            // NomeMedico
-            // 
-            this.NomeMedico.HeaderText = "Médico";
-            this.NomeMedico.Name = "NomeMedico";
-            // 
-            // Especialidade
-            // 
-            this.Especialidade.HeaderText = "Especialidade";
-            this.Especialidade.Name = "Especialidade";
+            this.Tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Width = 53;
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.depositphotos_10595408_stock_photo_white_show_room_background;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.HOME_1800x1200_c;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.dtgVacinas);
@@ -233,6 +237,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -266,7 +271,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NomeMedico;
         private System.Windows.Forms.DataGridViewTextBoxColumn Especialidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pessoa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NomeVacina;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TipoVacina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Vacina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
     }
 }

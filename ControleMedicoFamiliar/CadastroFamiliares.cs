@@ -38,5 +38,10 @@ namespace ControleMedicoFamiliar
             string nome = txtNome.Text;
             string parentesco = cbParentesco.SelectedText;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
