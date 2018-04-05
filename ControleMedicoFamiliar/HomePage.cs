@@ -19,27 +19,12 @@ namespace ControleMedicoFamiliar
 
         private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
         {
-            CadastroFamiliares cadastroFamiliares = new CadastroFamiliares();
-            cadastroFamiliares.ShowDialog();
+            
         }
 
         private void btnCadastrarMedico_Click(object sender, EventArgs e)
         {
-            CadastroMedicos cadastroMedicos = new CadastroMedicos();
-            cadastroMedicos.ShowDialog();
-            this.Close();
-        }
-
-        private void btnregvacinas_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btnregconsultas_Click(object sender, EventArgs e)
-        {
-            string pessoa = cbPessoaConsulta.SelectedText;
-            string medico = cbMedicos.SelectedText;
-
+            
         }
 
         private void HomePage_Load(object sender, EventArgs e)
@@ -49,14 +34,57 @@ namespace ControleMedicoFamiliar
 
         private void btnCadatrarVacina_Click(object sender, EventArgs e)
         {
-            CadastroVacinas cadastroVacinas = new CadastroVacinas();
-            cadastroVacinas.ShowDialog();
-            this.Close();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ajuda home = new Ajuda();
+            home.Show();
+        }
+
+        private void vacinasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroVacinas cadastroVacinas = new CadastroVacinas();
+            cadastroVacinas.ShowDialog();
+            this.Close();
+        }
+
+        private void médicosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroMedicos cadastroMedicos = new CadastroMedicos();
+            cadastroMedicos.ShowDialog();
+            this.Close();
+        }
+
+        private void familiaresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroFamiliares cadastroFamiliares = new CadastroFamiliares();
+            cadastroFamiliares.ShowDialog();
+            this.Close();
+        }
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistroConsultas view = new RegistroConsultas();
+            view.ShowDialog();
+        }
+
+        private void vacinasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RegistroVacinas view = new RegistroVacinas();
+            view.ShowDialog();
+        }
+
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

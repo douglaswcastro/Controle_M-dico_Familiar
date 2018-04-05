@@ -20,10 +20,13 @@ namespace ControleMedicoFamiliar
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Close();
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
             string tipo = txtTipo.Text;
@@ -32,6 +35,11 @@ namespace ControleMedicoFamiliar
             vacinas.Add(vacina);
 
             Close();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -63,6 +63,26 @@ namespace ControleMedicoFamiliar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_1294426_960_720 {
+            get {
+                object obj = ResourceManager.GetObject("cancel-1294426_960_720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_10595408_stock_photo_white_show_room_background {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_10595408-stock-photo-white-show-room-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HOME_1800x1200_c {
             get {
                 object obj = ResourceManager.GetObject("HOME-1800x1200_c", resourceCulture);
@@ -86,6 +106,26 @@ namespace ControleMedicoFamiliar.Properties {
         internal static System.Drawing.Bitmap medicinaescolar_620x330 {
             get {
                 object obj = ResourceManager.GetObject("medicinaescolar-620x330", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saveas_5165 {
+            get {
+                object obj = ResourceManager.GetObject("saveas_5165", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saveas_51651 {
+            get {
+                object obj = ResourceManager.GetObject("saveas_51651", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

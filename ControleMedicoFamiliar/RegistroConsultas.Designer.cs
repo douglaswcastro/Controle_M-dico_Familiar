@@ -39,30 +39,39 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCancelar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.cancel_1294426_960_720;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancelar.Location = new System.Drawing.Point(228, 235);
+            this.btnCancelar.Location = new System.Drawing.Point(622, 361);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(113, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(46, 39);
             this.btnCancelar.TabIndex = 24;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.saveas_51651;
+            this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCadastrar.CausesValidation = false;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCadastrar.Location = new System.Drawing.Point(357, 235);
+            this.btnCadastrar.Location = new System.Drawing.Point(674, 361);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(113, 23);
+            this.btnCadastrar.Size = new System.Drawing.Size(45, 39);
             this.btnCadastrar.TabIndex = 23;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Italic);
-            this.label1.Location = new System.Drawing.Point(223, 9);
+            this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(257, 27);
             this.label1.TabIndex = 25;
@@ -72,9 +81,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(198, 59);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(67, 23);
             this.label2.TabIndex = 26;
             this.label2.Text = "Pessoa:";
             // 
@@ -82,9 +92,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(198, 114);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F);
+            this.label3.Location = new System.Drawing.Point(14, 115);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 27;
             this.label3.Text = "Médico";
             // 
@@ -93,9 +104,9 @@
             this.cbPessoas.FormattingEnabled = true;
             this.cbPessoas.Items.AddRange(new object[] {
             "Você"});
-            this.cbPessoas.Location = new System.Drawing.Point(211, 75);
+            this.cbPessoas.Location = new System.Drawing.Point(17, 78);
             this.cbPessoas.Name = "cbPessoas";
-            this.cbPessoas.Size = new System.Drawing.Size(269, 21);
+            this.cbPessoas.Size = new System.Drawing.Size(453, 21);
             this.cbPessoas.TabIndex = 28;
             // 
             // cbMedicos
@@ -103,16 +114,17 @@
             this.cbMedicos.FormattingEnabled = true;
             this.cbMedicos.Items.AddRange(new object[] {
             "Você"});
-            this.cbMedicos.Location = new System.Drawing.Point(201, 130);
+            this.cbMedicos.Location = new System.Drawing.Point(17, 141);
             this.cbMedicos.Name = "cbMedicos";
-            this.cbMedicos.Size = new System.Drawing.Size(269, 21);
+            this.cbMedicos.Size = new System.Drawing.Size(453, 21);
             this.cbMedicos.TabIndex = 29;
             // 
             // RegistroConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.HOME_1800x1200_c;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.depositphotos_10595408_stock_photo_white_show_room_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.cbMedicos);
             this.Controls.Add(this.cbPessoas);

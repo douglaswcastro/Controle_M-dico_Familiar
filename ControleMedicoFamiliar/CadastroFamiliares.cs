@@ -24,10 +24,19 @@ namespace ControleMedicoFamiliar
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+
+
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCadastrar_Click_1(object sender, EventArgs e)
+        {
             string nome = txtNome.Text;
             string parentesco = cbParentesco.SelectedText;
-
-
         }
     }
 }

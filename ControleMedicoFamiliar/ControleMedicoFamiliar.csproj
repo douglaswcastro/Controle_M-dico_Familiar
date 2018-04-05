@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajuda.Designer.cs">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroFamiliares.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
       <DependentUpon>RegistroVacinas.cs</DependentUpon>
     </Compile>
     <Compile Include="Vacinas.cs" />
+    <EmbeddedResource Include="Ajuda.resx">
+      <DependentUpon>Ajuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroFamiliares.resx">
       <DependentUpon>CadastroFamiliares.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +152,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_10595408-stock-photo-white-show-room-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas_5165.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveas_5165.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-1294426_960_720.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
