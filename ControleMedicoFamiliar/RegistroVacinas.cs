@@ -16,8 +16,8 @@ namespace ControleMedicoFamiliar
         public RegistroVacinas()
         {
             InitializeComponent();
-            Vacinas vacinas = new Vacinas();
-            List<string> listvacina = vacinas.Listar();
+            Vacinas vacina = new Vacinas();
+            List<Vacinas> listvacina = vacina.Listar();
             cbVacina.DataSource = listvacina;
         }
 

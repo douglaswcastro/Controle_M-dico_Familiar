@@ -11,7 +11,7 @@ namespace ControleMedicoFamiliar
         string Pessoa;
         string Vacina;
 
-        List<RegistroVacina> listRegVacinas = new List<RegistroVacina>();
+        public static List<RegistroVacina> listRegVacinas = new List<RegistroVacina>();
 
         public void Adicionar(string pessoa, string vacina)
         {

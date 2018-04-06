@@ -11,11 +11,11 @@ namespace ControleMedicoFamiliar
         string nome;
         string especialidade;
 
-        List<Medicos> listMedicos = new List<Medicos>();
+        public static List<Medicos> listMedicos = new List<Medicos>();
 
         public void Adicionar(string nomemedico, string especialidademedico)
         {
-            listMedicos.Add(new Medicos() {nome = nomemedico, especialidade = especialidademedico  });
+            listMedicos.Add(new Medicos() { nome = nomemedico, especialidade = especialidademedico });
         }
 
         public List<Medicos> Listar() => listMedicos;

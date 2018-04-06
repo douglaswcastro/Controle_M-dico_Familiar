@@ -11,9 +11,9 @@ namespace ControleMedicoFamiliar
         public string Nome;
         public string Parentesco;
 
-        List<Familiares> listFamiliar = new List<Familiares>();
+        public static List<Familiares> listFamiliar = new List<Familiares>();
 
-         public void Adicionar(string nome, string parentesco)
+        public void Adicionar(string nome, string parentesco)
         {
             listFamiliar.Add(new Familiares() { Nome = nome, Parentesco = parentesco });
         }

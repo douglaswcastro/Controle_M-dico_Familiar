@@ -11,7 +11,7 @@ namespace ControleMedicoFamiliar
         string Pessoa;
         string Medico;
 
-        List<RegistroConsulta> listRegConsultas = new List<RegistroConsulta>();
+        public static List<RegistroConsulta> listRegConsultas = new List<RegistroConsulta>();
 
         public void Adicionar(string pessoa, string medico)
         {
