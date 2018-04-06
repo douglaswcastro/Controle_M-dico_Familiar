@@ -12,6 +12,10 @@ namespace ControleMedicoFamiliar
 {
     public partial class CadastroFamiliares : Form
     {
+        static string nome;
+        static string parentesco;
+
+        Familiares familiares = new Familiares();
         public CadastroFamiliares()
         {
             InitializeComponent();
@@ -35,13 +39,21 @@ namespace ControleMedicoFamiliar
 
         private void btnCadastrar_Click_1(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
-            string parentesco = cbParentesco.SelectedText;
+            nome = txtNome.Text;
+            parentesco = cbParentesco.SelectedItem.ToString();
+
+            familiares.Adicionar(nome, parentesco);
+            MessageBox.Show(nome +" "+ parentesco);
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CadastroFamiliares_Load(object sender, EventArgs e)
+        {
+            cbParentesco.SelectedIndex = 0;
         }
     }
 }

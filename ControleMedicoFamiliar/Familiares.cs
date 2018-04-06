@@ -8,8 +8,8 @@ namespace ControleMedicoFamiliar
 {
     public class Familiares
     {
-        public string Nome;
-        public string Parentesco;
+        public string Nome { get; set; }
+        public string Parentesco { get; set; }
 
         public static List<Familiares> listFamiliar = new List<Familiares>();
         

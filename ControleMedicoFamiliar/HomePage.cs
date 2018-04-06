@@ -16,13 +16,7 @@ namespace ControleMedicoFamiliar
         public HomePage()
         {
             InitializeComponent();
-            RegistroVacina regVacina = new RegistroVacina();
-            RegistroConsulta regConsulta = new RegistroConsulta();
-            List<RegistroVacina> listvacinas = regVacina.Listar();
-            this.dtgVacinas.DataSource = listvacinas;
-
-            List<RegistroConsulta> listconsultas = regConsulta.Listar();
-            this.dtgConsultas.DataSource = listconsultas;
+            
         }
 
         private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
@@ -37,7 +31,13 @@ namespace ControleMedicoFamiliar
 
         private void HomePage_Load(object sender, EventArgs e)
         {
+            RegistroVacina regVacina = new RegistroVacina();
+            RegistroConsulta regConsulta = new RegistroConsulta();
+            List<RegistroVacina> listvacinas = regVacina.Listar();
+            this.dtgVacinas.DataSource = listvacinas;
 
+            List<RegistroConsulta> listconsultas = regConsulta.Listar();
+            this.dtgConsultas.DataSource = listconsultas;
         }
 
         private void btnCadatrarVacina_Click(object sender, EventArgs e)
@@ -70,8 +70,7 @@ namespace ControleMedicoFamiliar
 
         private void familiaresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadastroFamiliares cadastroFamiliares = new CadastroFamiliares();
-            cadastroFamiliares.ShowDialog();
+           
         }
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -93,6 +92,18 @@ namespace ControleMedicoFamiliar
         private void dtgConsultas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroFamiliares cadastroFamiliares = new CadastroFamiliares();
+            cadastroFamiliares.ShowDialog();
+        }
+
+        private void listarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListarFamiliares listar = new ListarFamiliares();
+            listar.Show();
         }
     }
 }

@@ -39,9 +39,10 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(12, 46);
+            this.txtNome.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.txtNome.Location = new System.Drawing.Point(12, 35);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(468, 20);
+            this.txtNome.Size = new System.Drawing.Size(468, 26);
             this.txtNome.TabIndex = 19;
             // 
             // label3
@@ -49,7 +50,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
-            this.label3.Location = new System.Drawing.Point(13, 81);
+            this.label3.Location = new System.Drawing.Point(12, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 23);
             this.label3.TabIndex = 18;
@@ -60,7 +61,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
-            this.label2.Location = new System.Drawing.Point(13, 20);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 17;
@@ -68,6 +69,7 @@
             // 
             // cbParentesco
             // 
+            this.cbParentesco.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.cbParentesco.FormattingEnabled = true;
             this.cbParentesco.Items.AddRange(new object[] {
             "Irmão",
@@ -76,10 +78,11 @@
             "Filho",
             "Filha",
             "Esposa",
-            "Marido"});
-            this.cbParentesco.Location = new System.Drawing.Point(12, 107);
+            "Marido",
+            "Eu"});
+            this.cbParentesco.Location = new System.Drawing.Point(12, 90);
             this.cbParentesco.Name = "cbParentesco";
-            this.cbParentesco.Size = new System.Drawing.Size(468, 21);
+            this.cbParentesco.Size = new System.Drawing.Size(468, 28);
             this.cbParentesco.TabIndex = 22;
             // 
             // btnCancelar
@@ -128,6 +131,7 @@
             this.Name = "CadastroFamiliares";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Familiares";
+            this.Load += new System.EventHandler(this.CadastroFamiliares_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

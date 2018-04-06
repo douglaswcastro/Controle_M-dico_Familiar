@@ -8,8 +8,8 @@ namespace ControleMedicoFamiliar
 {
     public class Vacinas
     {
-        public string nome;
-        public string tipo;
+        public string nome { get; set; }
+        public string tipo { get; set; }
 
         public static List<Vacinas> listVacinas = new List<Vacinas>();
 
