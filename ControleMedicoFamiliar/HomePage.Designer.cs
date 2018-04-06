@@ -32,13 +32,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dtgConsultas = new System.Windows.Forms.DataGridView();
-            this.ConsultaPessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NomeMedico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Especialidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgVacinas = new System.Windows.Forms.DataGridView();
-            this.Pessoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vacina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vacinasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,65 +74,21 @@
             // 
             this.dtgConsultas.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgConsultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ConsultaPessoa,
-            this.NomeMedico,
-            this.Especialidade});
             this.dtgConsultas.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dtgConsultas.Location = new System.Drawing.Point(12, 67);
             this.dtgConsultas.Name = "dtgConsultas";
             this.dtgConsultas.Size = new System.Drawing.Size(707, 121);
             this.dtgConsultas.TabIndex = 43;
-            // 
-            // ConsultaPessoa
-            // 
-            this.ConsultaPessoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ConsultaPessoa.HeaderText = "Pessoa";
-            this.ConsultaPessoa.Name = "ConsultaPessoa";
-            // 
-            // NomeMedico
-            // 
-            this.NomeMedico.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NomeMedico.HeaderText = "Médico";
-            this.NomeMedico.Name = "NomeMedico";
-            // 
-            // Especialidade
-            // 
-            this.Especialidade.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Especialidade.HeaderText = "Especialidade";
-            this.Especialidade.Name = "Especialidade";
+            this.dtgConsultas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgConsultas_CellContentClick);
             // 
             // dtgVacinas
             // 
             this.dtgVacinas.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dtgVacinas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Pessoa,
-            this.Vacina,
-            this.Tipo});
             this.dtgVacinas.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dtgVacinas.Location = new System.Drawing.Point(12, 232);
             this.dtgVacinas.Name = "dtgVacinas";
             this.dtgVacinas.Size = new System.Drawing.Size(707, 125);
             this.dtgVacinas.TabIndex = 100;
-            // 
-            // Pessoa
-            // 
-            this.Pessoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Pessoa.FillWeight = 50F;
-            this.Pessoa.HeaderText = "Pessoa";
-            this.Pessoa.Name = "Pessoa";
-            // 
-            // Vacina
-            // 
-            this.Vacina.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Vacina.HeaderText = "Vacina";
-            this.Vacina.Name = "Vacina";
-            // 
-            // Tipo
-            // 
-            this.Tipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
             // 
             // menuStrip1
             // 
@@ -271,11 +221,5 @@
         private System.Windows.Forms.ToolStripMenuItem vacinasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ConsultaPessoa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NomeMedico;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Especialidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pessoa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Vacina;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
     }
 }

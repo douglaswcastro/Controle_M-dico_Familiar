@@ -12,27 +12,27 @@ namespace ControleMedicoFamiliar
 {
     public partial class HomePage : Form
     {
-        
+
         public HomePage()
         {
             InitializeComponent();
             RegistroVacina regVacina = new RegistroVacina();
             RegistroConsulta regConsulta = new RegistroConsulta();
             List<RegistroVacina> listvacinas = regVacina.Listar();
-            dtgVacinas.DataSource = listvacinas;
+            this.dtgVacinas.DataSource = listvacinas;
 
             List<RegistroConsulta> listconsultas = regConsulta.Listar();
-            dtgConsultas.DataSource = listconsultas;
+            this.dtgConsultas.DataSource = listconsultas;
         }
 
         private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnCadastrarMedico_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void HomePage_Load(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace ControleMedicoFamiliar
 
         private void btnCadatrarVacina_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,10 +85,14 @@ namespace ControleMedicoFamiliar
             view.Show();
         }
 
-
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dtgConsultas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

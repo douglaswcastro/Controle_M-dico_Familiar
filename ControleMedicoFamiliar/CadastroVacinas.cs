@@ -38,11 +38,7 @@ namespace ControleMedicoFamiliar
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-            foreach (var item in vacinas.Listar())
-            {
-            MessageBox.Show(item);
-
-            }
+            this.Close();
         }
     }
 }

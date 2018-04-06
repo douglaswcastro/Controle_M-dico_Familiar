@@ -39,20 +39,22 @@
             // 
             // cbVacina
             // 
+            this.cbVacina.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVacina.FormattingEnabled = true;
-            this.cbVacina.Location = new System.Drawing.Point(15, 96);
+            this.cbVacina.Location = new System.Drawing.Point(15, 92);
             this.cbVacina.Name = "cbVacina";
-            this.cbVacina.Size = new System.Drawing.Size(453, 21);
+            this.cbVacina.Size = new System.Drawing.Size(453, 28);
             this.cbVacina.TabIndex = 36;
             // 
             // cbPessoas
             // 
+            this.cbPessoas.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPessoas.FormattingEnabled = true;
             this.cbPessoas.Items.AddRange(new object[] {
             "Você"});
-            this.cbPessoas.Location = new System.Drawing.Point(15, 44);
+            this.cbPessoas.Location = new System.Drawing.Point(16, 35);
             this.cbPessoas.Name = "cbPessoas";
-            this.cbPessoas.Size = new System.Drawing.Size(453, 21);
+            this.cbPessoas.Size = new System.Drawing.Size(453, 28);
             this.cbPessoas.TabIndex = 35;
             // 
             // label3
@@ -60,7 +62,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
-            this.label3.Location = new System.Drawing.Point(21, 70);
+            this.label3.Location = new System.Drawing.Point(12, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 23);
             this.label3.TabIndex = 34;
@@ -72,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
-            this.label2.Location = new System.Drawing.Point(21, 18);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 23);
             this.label2.TabIndex = 33;
