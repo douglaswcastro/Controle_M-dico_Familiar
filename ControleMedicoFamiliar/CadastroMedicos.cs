@@ -12,6 +12,7 @@ namespace ControleMedicoFamiliar
 {
     public partial class CadastroMedicos : Form
     {
+        Medicos medicos = new Medicos();
         public CadastroMedicos()
         {
             InitializeComponent();
@@ -34,6 +35,9 @@ namespace ControleMedicoFamiliar
         {
             string nome = txtNome.Text;
             string especialidade = txtEspecialidade.Text;
+
+            medicos.Adicionar(nome, especialidade);
+            MessageBox.Show("Médico adicionado com sucesso!");
         }
 
         private void btnCancelar_Click_1(object sender, EventArgs e)

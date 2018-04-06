@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace ControleMedicoFamiliar
 {
-    class RegistroVacina
+    public class RegistroVacina
     {
-        string pessoa;
-        string vacina;
-        string tipo;
+        string Pessoa;
+        string Vacina;
 
-        public RegistroVacina(string pessoa, string vacina, string tipo)
+        List<RegistroVacina> listRegVacinas = new List<RegistroVacina>();
+
+        public void Adicionar(string pessoa, string vacina)
         {
-            this.pessoa = pessoa;
-            this.vacina = vacina;
-            this.tipo = tipo;
-
+            listRegVacinas.Add(new RegistroVacina { Pessoa = pessoa, Vacina = vacina });
         }
+
+        public List<RegistroVacina> Listar() => listRegVacinas;
     }
 }

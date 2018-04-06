@@ -12,11 +12,13 @@ namespace ControleMedicoFamiliar
 {
     public partial class RegistroVacinas : Form
     {
-        HomePage home;
-
+        RegistroVacina regVacina = new RegistroVacina();
         public RegistroVacinas()
         {
             InitializeComponent();
+            Vacinas vacinas = new Vacinas();
+            List<string> listvacina = vacinas.Listar();
+            cbVacina.DataSource = listvacina;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -29,10 +31,9 @@ namespace ControleMedicoFamiliar
             string pessoa = cbPessoas.SelectedText;
             string medico = cbVacina.SelectedText;
 
-            MessageBox.Show("Vacina registrada com sucesso:");
-            this.Hide();
-            HomePage home = new HomePage();
-            home.ShowDialog();
+            regVacina.Adicionar(pessoa, medico);
+
+            MessageBox.Show("Vacina registrada com sucesso!");
         }
 
         private void button1_Click(object sender, EventArgs e)

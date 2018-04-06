@@ -8,14 +8,21 @@ namespace ControleMedicoFamiliar
 {
     class Vacinas
     {
-        string nome;
-        string tipo;
+        public string nome;
+        public string tipo;
 
-        public Vacinas(string nome, string tipo)
+        List<Vacinas> listVacinas = new List<Vacinas>();
+
+        public void Adicionar(string nomeVacina, string tipoVacina)
         {
-            this.nome = nome;
-            this.tipo = tipo;
+            listVacinas.Add(new Vacinas() { nome = nomeVacina, tipo = tipoVacina });
+        }
 
+        public List<string> Listar()
+        {
+            List<string> result = listVacinas.Select(v => v.nome).ToList();
+            return result;
+               
         }
     }
 }

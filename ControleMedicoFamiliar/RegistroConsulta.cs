@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace ControleMedicoFamiliar
 {
-    class RegistroConsulta
+    public class RegistroConsulta
     {
-        public RegistroConsulta(string pessoa, string medico, string especialidade)
-        {
+        string Pessoa;
+        string Medico;
 
+        List<RegistroConsulta> listRegConsultas = new List<RegistroConsulta>();
+
+        public void Adicionar(string pessoa, string medico)
+        {
+            listRegConsultas.Add(new RegistroConsulta { Pessoa = pessoa, Medico = medico });
         }
+
+        public List<RegistroConsulta> Listar() => listRegConsultas;
     }
 }

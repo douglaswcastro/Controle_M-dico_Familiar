@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace ControleMedicoFamiliar
 {
-    class Medicos
+    public class Medicos
     {
         string nome;
         string especialidade;
 
+        List<Medicos> listMedicos = new List<Medicos>();
+
+        public void Adicionar(string nomemedico, string especialidademedico)
+        {
+            listMedicos.Add(new Medicos() {nome = nomemedico, especialidade = especialidademedico  });
+        }
+
+        public List<Medicos> Listar() => listMedicos;
     }
+
 }

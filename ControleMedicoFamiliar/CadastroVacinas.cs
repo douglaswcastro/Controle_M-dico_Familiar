@@ -12,7 +12,7 @@ namespace ControleMedicoFamiliar
 {
     public partial class CadastroVacinas : Form
     {
-        List<Vacinas> vacinas = new List<Vacinas>();
+        Vacinas vacinas = new Vacinas();
         public CadastroVacinas()
         {
             InitializeComponent();
@@ -30,16 +30,19 @@ namespace ControleMedicoFamiliar
         {
             string nome = txtNome.Text;
             string tipo = txtTipo.Text;
-            Vacinas vacina = new Vacinas(nome, tipo);
 
-            vacinas.Add(vacina);
+            vacinas.Adicionar(nome, tipo);
+            MessageBox.Show("Vacina cadastrada com sucesso!");
 
-            Close();
         }
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            foreach (var item in vacinas.Listar())
+            {
+            MessageBox.Show(item);
+
+            }
         }
     }
 }

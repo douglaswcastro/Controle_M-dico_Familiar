@@ -24,8 +24,6 @@ namespace ControleMedicoFamiliar
 
             MessageBox.Show("Consulta registrada com sucesso:");
             this.Hide();
-            HomePage home = new HomePage();
-            home.ShowDialog();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
