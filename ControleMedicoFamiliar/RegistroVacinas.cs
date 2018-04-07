@@ -42,8 +42,8 @@ namespace ControleMedicoFamiliar
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string pessoa = cbPessoas.SelectedText;
-            string vacina = cbVacina.SelectedText;
+            string pessoa = cbPessoas.SelectedItem.ToString();
+            string vacina = cbVacina.SelectedItem.ToString();
 
             try
             {
@@ -61,7 +61,12 @@ namespace ControleMedicoFamiliar
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            home.Refresh();
+            home.Show();
+        }
+
+        private void RegistroVacinas_Load(object sender, EventArgs e)
+        {
+            cbPessoas.SelectedIndex = 0;
         }
     }
 }

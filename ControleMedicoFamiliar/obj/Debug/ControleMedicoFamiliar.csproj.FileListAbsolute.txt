@@ -15,3 +15,5 @@ C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\Co
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.RegistroVacinas.resources
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.Ajuda.resources
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.ListarFamiliares.resources
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.ListarMedicos.resources
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.ListarVacinas.resources

@@ -10,14 +10,12 @@ using System.Windows.Forms;
 
 namespace ControleMedicoFamiliar
 {
-    public partial class ListarFamiliares : Form
+    public partial class ListarMedicos : Form
     {
-        Familiares familiares = new Familiares();
-
-        public ListarFamiliares()
+        Medicos medicos = new Medicos();
+        public ListarMedicos()
         {
             InitializeComponent();
-
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
@@ -25,17 +23,16 @@ namespace ControleMedicoFamiliar
             Close();
         }
 
-        private void ListarFamiliares_Load(object sender, EventArgs e)
-        {
-            List<Familiares> list = new List<Familiares>();
-            list = familiares.Listar();
-            dataGridView1.DataSource = list;
-
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void ListarMedicos_Load(object sender, EventArgs e)
+        {
+            List<Medicos> list = new List<Medicos>();
+            list = medicos.Listar();
+            dataGridView1.DataSource = list;
         }
     }
 }

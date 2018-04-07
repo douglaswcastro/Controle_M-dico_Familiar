@@ -92,6 +92,8 @@
             // 
             this.cbPessoas.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.cbPessoas.FormattingEnabled = true;
+            this.cbPessoas.Items.AddRange(new object[] {
+            "Eu"});
             this.cbPessoas.Location = new System.Drawing.Point(12, 35);
             this.cbPessoas.Name = "cbPessoas";
             this.cbPessoas.Size = new System.Drawing.Size(453, 28);

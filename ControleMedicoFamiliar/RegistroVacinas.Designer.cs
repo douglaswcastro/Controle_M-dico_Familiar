@@ -51,7 +51,7 @@
             this.cbPessoas.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPessoas.FormattingEnabled = true;
             this.cbPessoas.Items.AddRange(new object[] {
-            "Você"});
+            "Eu"});
             this.cbPessoas.Location = new System.Drawing.Point(16, 35);
             this.cbPessoas.Name = "cbPessoas";
             this.cbPessoas.Size = new System.Drawing.Size(453, 28);
@@ -128,6 +128,7 @@
             this.Name = "RegistroVacinas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Vacinas";
+            this.Load += new System.EventHandler(this.RegistroVacinas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

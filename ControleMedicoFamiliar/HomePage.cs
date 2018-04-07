@@ -12,13 +12,19 @@ namespace ControleMedicoFamiliar
 {
     public partial class HomePage : Form
     {
+        #region Instancias
+        RegistroVacina regVacina = new RegistroVacina();
+        RegistroConsulta regConsulta = new RegistroConsulta();
+
+        #endregion
 
         public HomePage()
         {
             InitializeComponent();
-            
+
         }
 
+        #region Não usados
         private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
         {
 
@@ -31,29 +37,35 @@ namespace ControleMedicoFamiliar
 
         private void HomePage_Load(object sender, EventArgs e)
         {
-            RegistroVacina regVacina = new RegistroVacina();
-            RegistroConsulta regConsulta = new RegistroConsulta();
-            List<RegistroVacina> listvacinas = regVacina.Listar();
-            this.dtgVacinas.DataSource = listvacinas;
 
-            List<RegistroConsulta> listconsultas = regConsulta.Listar();
-            this.dtgConsultas.DataSource = listconsultas;
+            List<RegistroVacina> listvacinas = new List<RegistroVacina>();
+            listvacinas = regVacina.Listar();
+            dtgVacinas.DataSource = listvacinas;
+
+            List<RegistroConsulta> listconsultas = new List<RegistroConsulta>();
+            listconsultas = regConsulta.Listar();
+            dtgConsultas.DataSource = listconsultas;
         }
 
         private void btnCadatrarVacina_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
 
+        #region Botões
+        //Botão para fechar o form
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
         }
+        #endregion
 
+        #region Opções do Menu
         private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Ajuda home = new Ajuda();
-            home.Show();
+            Ajuda form = new Ajuda();
+            form.Show();
         }
 
         private void vacinasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,22 +76,24 @@ namespace ControleMedicoFamiliar
 
         private void médicosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CadastroMedicos cadastroMedicos = new CadastroMedicos();
-            cadastroMedicos.Show();
+
         }
 
         private void familiaresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
         }
+
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RegistroConsultas view = new RegistroConsultas();
+            this.Hide();
             view.Show();
         }
 
         private void vacinasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegistroVacinas view = new RegistroVacinas();
             view.Show();
         }
@@ -105,5 +119,35 @@ namespace ControleMedicoFamiliar
             ListarFamiliares listar = new ListarFamiliares();
             listar.Show();
         }
+
+        private void vacinasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CadastroVacinas form = new CadastroVacinas();
+            form.Show();
+        }
+
+        private void listarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ListarVacinas form = new ListarVacinas();
+            form.Show();
+        }
+
+        private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            CadastroMedicos form = new CadastroMedicos();
+            form.Show();
+        }
+
+        private void listarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ListarMedicos form = new ListarMedicos();
+            form.Show();
+        }
+        #endregion
     }
 }

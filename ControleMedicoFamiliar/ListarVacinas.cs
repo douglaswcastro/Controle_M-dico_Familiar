@@ -10,32 +10,24 @@ using System.Windows.Forms;
 
 namespace ControleMedicoFamiliar
 {
-    public partial class ListarFamiliares : Form
+    public partial class ListarVacinas : Form
     {
-        Familiares familiares = new Familiares();
-
-        public ListarFamiliares()
+        Vacinas vacinas = new Vacinas();
+        public ListarVacinas()
         {
             InitializeComponent();
-
         }
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
-        private void ListarFamiliares_Load(object sender, EventArgs e)
+        private void ListarVacinas_Load(object sender, EventArgs e)
         {
-            List<Familiares> list = new List<Familiares>();
-            list = familiares.Listar();
+            List<Vacinas> list = new List<Vacinas>();
+            list = vacinas.Listar();
             dataGridView1.DataSource = list;
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

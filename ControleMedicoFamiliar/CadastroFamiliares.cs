@@ -43,7 +43,7 @@ namespace ControleMedicoFamiliar
             parentesco = cbParentesco.SelectedItem.ToString();
 
             familiares.Adicionar(nome, parentesco);
-            MessageBox.Show(nome +" "+ parentesco);
+            MessageBox.Show("Familiar salvo com sucesso!");
         }
 
         private void label1_Click(object sender, EventArgs e)
