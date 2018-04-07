@@ -39,6 +39,7 @@
             // 
             // cbVacina
             // 
+            this.cbVacina.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbVacina.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbVacina.FormattingEnabled = true;
             this.cbVacina.Location = new System.Drawing.Point(15, 92);
@@ -48,6 +49,7 @@
             // 
             // cbPessoas
             // 
+            this.cbPessoas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPessoas.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPessoas.FormattingEnabled = true;
             this.cbPessoas.Items.AddRange(new object[] {

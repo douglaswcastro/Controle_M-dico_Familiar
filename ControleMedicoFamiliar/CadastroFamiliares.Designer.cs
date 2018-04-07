@@ -69,6 +69,7 @@
             // 
             // cbParentesco
             // 
+            this.cbParentesco.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbParentesco.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.cbParentesco.FormattingEnabled = true;
             this.cbParentesco.Items.AddRange(new object[] {

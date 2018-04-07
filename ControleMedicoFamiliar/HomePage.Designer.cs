@@ -141,7 +141,7 @@
             this.cadastrarToolStripMenuItem1,
             this.listarToolStripMenuItem1});
             this.vacinasToolStripMenuItem.Name = "vacinasToolStripMenuItem";
-            this.vacinasToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.vacinasToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.vacinasToolStripMenuItem.Text = "Vacinas";
             this.vacinasToolStripMenuItem.Click += new System.EventHandler(this.vacinasToolStripMenuItem_Click_1);
             // 
@@ -188,20 +188,20 @@
             this.vacinasToolStripMenuItem1,
             this.consultasToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
-            this.registrosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.registrosToolStripMenuItem.Text = "Registrar";
+            this.registrosToolStripMenuItem.Size = new System.Drawing.Size(131, 20);
+            this.registrosToolStripMenuItem.Text = "Registrar Ocorrências";
             // 
             // vacinasToolStripMenuItem1
             // 
             this.vacinasToolStripMenuItem1.Name = "vacinasToolStripMenuItem1";
-            this.vacinasToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
+            this.vacinasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.vacinasToolStripMenuItem1.Text = "Vacinas";
             this.vacinasToolStripMenuItem1.Click += new System.EventHandler(this.vacinasToolStripMenuItem1_Click);
             // 
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultasToolStripMenuItem.Text = "Consultas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 

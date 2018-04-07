@@ -90,6 +90,7 @@
             // 
             // cbPessoas
             // 
+            this.cbPessoas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPessoas.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.cbPessoas.FormattingEnabled = true;
             this.cbPessoas.Items.AddRange(new object[] {
@@ -101,6 +102,7 @@
             // 
             // cbMedicos
             // 
+            this.cbMedicos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMedicos.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.cbMedicos.FormattingEnabled = true;
             this.cbMedicos.Location = new System.Drawing.Point(12, 92);

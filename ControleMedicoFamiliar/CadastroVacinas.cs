@@ -28,12 +28,22 @@ namespace ControleMedicoFamiliar
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
-            string tipo = txtTipo.Text;
+            if (this.txtNome.Text == "")
+            {
+                MessageBox.Show("Digite o nome da vacina.");
+            }
+            else if (this.txtTipo.Text == "")
+            {
+                MessageBox.Show("Digite o tipo da vacina.");
+            }
+            else
+            {
+                string nome = txtNome.Text;
+                string tipo = txtTipo.Text;
 
-            vacinas.Adicionar(nome, tipo);
-            MessageBox.Show("Vacina cadastrada com sucesso!");
-
+                vacinas.Adicionar(nome, tipo);
+                MessageBox.Show("Vacina cadastrada com sucesso!");
+            }
         }
 
         private void btnCancelar_Click_1(object sender, EventArgs e)

@@ -39,11 +39,23 @@ namespace ControleMedicoFamiliar
 
         private void btnCadastrar_Click_1(object sender, EventArgs e)
         {
-            nome = txtNome.Text;
-            parentesco = cbParentesco.SelectedItem.ToString();
+            if(txtNome.Text == "")
+            {
+                MessageBox.Show("Digite o nome do familiar a ser registrado.");
+            }
+            else if (cbParentesco.Text == "")
+            {
+                MessageBox.Show("Selecione um parentesco!");
+            }
+            else
+            {
+                nome = txtNome.Text;
+                parentesco = cbParentesco.SelectedItem.ToString();
 
-            familiares.Adicionar(nome, parentesco);
-            MessageBox.Show("Familiar salvo com sucesso!");
+                familiares.Adicionar(nome, parentesco);
+                MessageBox.Show("Familiar salvo com sucesso!");
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)

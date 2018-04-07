@@ -32,20 +32,36 @@ namespace ControleMedicoFamiliar
             {
                 cbPessoas.Items.Add(item.Nome);
             }
+
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            string pessoa = cbPessoas.SelectedItem.ToString();
-            string medico = cbMedicos.SelectedItem.ToString();
-           
+            if (this.cbPessoas.Text == "")
+            {
+                MessageBox.Show("Cadastre algum familiar para ser o paciente da consulta.");
+
+                this.Close();
+                HomePage home = new HomePage();
+                home.Show();
+            }
+            else if (this.cbMedicos.Text == "")
+            {
+                MessageBox.Show("Cadastre algum médico para ser o responsável da consulta.");
+
+                this.Close();
+                HomePage home = new HomePage();
+                home.Show();
+            }
+            else
+            {
+                string pessoa = cbPessoas.SelectedItem.ToString();
+                string medico = cbMedicos.SelectedItem.ToString();
+
                 regConsulta.Adicionar(pessoa, medico);
                 MessageBox.Show("Consulta registrada com sucesso:");
-           
-            foreach (var item in regConsulta.Listar())
-            {
-                MessageBox.Show(item.Pessoa+" "+item.Medico);
             }
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

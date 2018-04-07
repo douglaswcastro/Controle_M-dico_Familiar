@@ -33,11 +33,22 @@ namespace ControleMedicoFamiliar
 
         private void btnCadastrar_Click_1(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
-            string especialidade = txtEspecialidade.Text;
+            if (this.txtNome.Text == "")
+            {
+                MessageBox.Show("Digite o nome do médico.");
+            }
+            else if (this.txtEspecialidade.Text == "")
+            {
+                MessageBox.Show("Digite a especialização do médico.");
+            }
+            else
+            {
+                string nome = txtNome.Text;
+                string especialidade = txtEspecialidade.Text;
 
-            medicos.Adicionar(nome, especialidade);
-            MessageBox.Show("Médico adicionado com sucesso!");
+                medicos.Adicionar(nome, especialidade);
+                MessageBox.Show("Médico adicionado com sucesso!");
+            }
         }
 
         private void btnCancelar_Click_1(object sender, EventArgs e)

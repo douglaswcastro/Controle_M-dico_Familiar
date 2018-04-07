@@ -42,20 +42,39 @@ namespace ControleMedicoFamiliar
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string pessoa = cbPessoas.SelectedItem.ToString();
-            string vacina = cbVacina.SelectedItem.ToString();
+            if (this.cbPessoas.Text == "")
+            {
+                MessageBox.Show("Cadastre algum familiar para ser o paciente da consulta.");
 
-            try
-            {
-                regVacina.Adicionar(pessoa, vacina);
-                MessageBox.Show("Vacina registrada com sucesso!");
+                this.Close();
+                HomePage home = new HomePage();
+                home.Show();
             }
-            catch (Exception)
+            else if (this.cbVacina.Text == "")
             {
-                MessageBox.Show("Erro ao registrar vacina!");
-                throw;
+                MessageBox.Show("Cadastre alguma vacina que será aplicada.");
+
+                this.Close();
+                HomePage home = new HomePage();
+                home.Show();
             }
-           
+            else
+            {
+                string pessoa = cbPessoas.SelectedItem.ToString();
+                string vacina = cbVacina.SelectedItem.ToString();
+
+                try
+                {
+                    regVacina.Adicionar(pessoa, vacina);
+                    MessageBox.Show("Vacina registrada com sucesso!");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Erro ao registrar vacina!");
+                    throw;
+                }
+            }
+                       
         }
 
         private void button1_Click(object sender, EventArgs e)
