@@ -49,6 +49,8 @@ namespace ControleMedicoFamiliar
                 medicos.Adicionar(nome, especialidade);
                 MessageBox.Show("Médico adicionado com sucesso!");
             }
+            this.txtNome.Text = "";
+            this.txtEspecialidade.Text = "";
         }
 
         private void btnCancelar_Click_1(object sender, EventArgs e)

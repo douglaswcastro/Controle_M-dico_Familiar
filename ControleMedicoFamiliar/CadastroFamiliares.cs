@@ -55,7 +55,7 @@ namespace ControleMedicoFamiliar
                 familiares.Adicionar(nome, parentesco);
                 MessageBox.Show("Familiar salvo com sucesso!");
             }
-
+            txtNome.Text = "";
         }
 
         private void label1_Click(object sender, EventArgs e)

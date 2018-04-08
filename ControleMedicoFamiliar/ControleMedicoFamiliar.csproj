@@ -186,25 +186,14 @@
     <None Include="Resources\medicinaescolar-620x330.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\HOME-1800x1200_c.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\depositphotos_10595408-stock-photo-white-show-room-background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\saveas_5165.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\saveas_5165.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel-1294426_960_720.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ico_medico.ico" />
+    <None Include="Resources\fundo.jpg" />
     <None Include="Resources\Save_37110.png" />
   </ItemGroup>
   <ItemGroup>

@@ -98,6 +98,7 @@
             this.cbPessoas.Location = new System.Drawing.Point(12, 35);
             this.cbPessoas.Name = "cbPessoas";
             this.cbPessoas.Size = new System.Drawing.Size(453, 28);
+            this.cbPessoas.Sorted = true;
             this.cbPessoas.TabIndex = 28;
             // 
             // cbMedicos
@@ -108,13 +109,14 @@
             this.cbMedicos.Location = new System.Drawing.Point(12, 92);
             this.cbMedicos.Name = "cbMedicos";
             this.cbMedicos.Size = new System.Drawing.Size(453, 28);
+            this.cbMedicos.Sorted = true;
             this.cbMedicos.TabIndex = 29;
             // 
             // RegistroConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.fundo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(478, 181);
             this.Controls.Add(this.cbMedicos);

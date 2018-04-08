@@ -141,7 +141,7 @@
             this.cadastrarToolStripMenuItem1,
             this.listarToolStripMenuItem1});
             this.vacinasToolStripMenuItem.Name = "vacinasToolStripMenuItem";
-            this.vacinasToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.vacinasToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.vacinasToolStripMenuItem.Text = "Vacinas";
             this.vacinasToolStripMenuItem.Click += new System.EventHandler(this.vacinasToolStripMenuItem_Click_1);
             // 
@@ -194,14 +194,14 @@
             // vacinasToolStripMenuItem1
             // 
             this.vacinasToolStripMenuItem1.Name = "vacinasToolStripMenuItem1";
-            this.vacinasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.vacinasToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
             this.vacinasToolStripMenuItem1.Text = "Vacinas";
             this.vacinasToolStripMenuItem1.Click += new System.EventHandler(this.vacinasToolStripMenuItem1_Click);
             // 
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.consultasToolStripMenuItem.Text = "Consultas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
@@ -229,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.fundo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.btnFechar);

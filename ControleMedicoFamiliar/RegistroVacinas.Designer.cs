@@ -45,6 +45,7 @@
             this.cbVacina.Location = new System.Drawing.Point(15, 92);
             this.cbVacina.Name = "cbVacina";
             this.cbVacina.Size = new System.Drawing.Size(453, 28);
+            this.cbVacina.Sorted = true;
             this.cbVacina.TabIndex = 36;
             // 
             // cbPessoas
@@ -57,6 +58,7 @@
             this.cbPessoas.Location = new System.Drawing.Point(16, 35);
             this.cbPessoas.Name = "cbPessoas";
             this.cbPessoas.Size = new System.Drawing.Size(453, 28);
+            this.cbPessoas.Sorted = true;
             this.cbPessoas.TabIndex = 35;
             // 
             // label3
@@ -116,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.medicinaescolar_620x330;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.fundo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(475, 180);
             this.Controls.Add(this.button1);

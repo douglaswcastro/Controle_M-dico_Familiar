@@ -120,19 +120,24 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Como utilizar o sistema:
 
-A aplicação serve para auxiliar a guardar e organizar informações médicas sobre você, usuário, 
-e seus familiares, da forma que for desejado.
+A aplicação serve para auxiliar a guardar e organizar
+informações médicas sobre você e seus familiares.
 
-Na tela inicial, serão listadas as consultas e vacinas já registradas, para ter fácil acesso a sua própria informação.
+Na tela inicial serão listadas as consultas e vacinas já
+registradas para ter fácil acesso a sua própria informação.
 
-Para usar as funções do Controle Médico Familiar, utilize o “Menu” superior para selecionar as diferentes opções,
-para listar e cadastrar cada uma individualmente. 
+Para usar as funções do Controle Médico Familiar utilize 
+o “Menu” superior para selecionar as diferentes opções.
 
-Dentro de “Cadastrar”, haverão campos que precisam ser preenchidos com as informações adequadas.
-Em “Listar”, você poderá ver as informações já cadastradas e fazer alterações caso seja desejado. 
-Para isso, apenas clique no campo que deseja alterar e digite a mudança. 
+  Em “Cadastrar”, haverão campos para serem preenchidos
+e o botão para salvar o registro digitado.
+  Em “Listar”, você poderá ver e fazer alteração em seus
+registros clicando duas vezes no campo desejado 
+e digitando a mudança.
 
-Os botões de X servem para fechar a janela onde ele está, e o Disquete para salvar o que for inserido.
+O botão ”X” fecha a tela referente.
+O botão “Disquete” salva as informações inseridas.
+
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
