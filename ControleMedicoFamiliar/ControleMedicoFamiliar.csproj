@@ -49,8 +49,16 @@
     <ApplicationIcon>ico_medico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +75,12 @@
     </Compile>
     <Compile Include="Ajuda.Designer.cs">
       <DependentUpon>Ajuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroConsultaAgendada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroConsultaAgendada.Designer.cs">
+      <DependentUpon>CadastroConsultaAgendada.cs</DependentUpon>
     </Compile>
     <Compile Include="CadastroFamiliares.cs">
       <SubType>Form</SubType>
@@ -85,6 +99,13 @@
     </Compile>
     <Compile Include="CadastroVacinas.Designer.cs">
       <DependentUpon>CadastroVacinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAgendada.cs" />
+    <Compile Include="ConsultasAgendadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultasAgendadas.Designer.cs">
+      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
     </Compile>
     <Compile Include="Familiares.cs" />
     <Compile Include="HomePage.cs">
@@ -132,6 +153,9 @@
     <EmbeddedResource Include="Ajuda.resx">
       <DependentUpon>Ajuda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastroConsultaAgendada.resx">
+      <DependentUpon>CadastroConsultaAgendada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroFamiliares.resx">
       <DependentUpon>CadastroFamiliares.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroVacinas.resx">
       <DependentUpon>CadastroVacinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasAgendadas.resx">
+      <DependentUpon>ConsultasAgendadas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -193,6 +220,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ico_medico.ico" />
+    <None Include="Resources\este.png" />
     <None Include="Resources\fundo.jpg" />
     <None Include="Resources\Save_37110.png" />
   </ItemGroup>

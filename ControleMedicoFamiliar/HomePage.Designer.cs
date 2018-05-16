@@ -46,11 +46,16 @@
             this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vacinasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasAgendadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.dtgConsultasAgendadas = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgConsultas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVacinas)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsultasAgendadas)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -58,7 +63,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(267, 39);
+            this.label5.Location = new System.Drawing.Point(104, 41);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(195, 23);
             this.label5.TabIndex = 34;
@@ -69,7 +74,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
-            this.label6.Location = new System.Drawing.Point(279, 204);
+            this.label6.Location = new System.Drawing.Point(104, 206);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(180, 23);
             this.label6.TabIndex = 35;
@@ -83,7 +88,7 @@
             this.dtgConsultas.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dtgConsultas.Location = new System.Drawing.Point(12, 67);
             this.dtgConsultas.Name = "dtgConsultas";
-            this.dtgConsultas.Size = new System.Drawing.Size(707, 121);
+            this.dtgConsultas.Size = new System.Drawing.Size(336, 121);
             this.dtgConsultas.TabIndex = 43;
             this.dtgConsultas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgConsultas_CellContentClick);
             // 
@@ -94,7 +99,7 @@
             this.dtgVacinas.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dtgVacinas.Location = new System.Drawing.Point(12, 232);
             this.dtgVacinas.Name = "dtgVacinas";
-            this.dtgVacinas.Size = new System.Drawing.Size(707, 125);
+            this.dtgVacinas.Size = new System.Drawing.Size(336, 125);
             this.dtgVacinas.TabIndex = 100;
             // 
             // menuStrip1
@@ -105,6 +110,7 @@
             this.vacinasToolStripMenuItem,
             this.médicosToolStripMenuItem,
             this.registrosToolStripMenuItem,
+            this.consultasAgendadasToolStripMenuItem,
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -205,6 +211,22 @@
             this.consultasToolStripMenuItem.Text = "Consultas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
+            // consultasAgendadasToolStripMenuItem
+            // 
+            this.consultasAgendadasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastrarToolStripMenuItem3});
+            this.consultasAgendadasToolStripMenuItem.Name = "consultasAgendadasToolStripMenuItem";
+            this.consultasAgendadasToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
+            this.consultasAgendadasToolStripMenuItem.Text = "Consultas Agendadas";
+            this.consultasAgendadasToolStripMenuItem.Click += new System.EventHandler(this.consultasAgendadasToolStripMenuItem_Click);
+            // 
+            // cadastrarToolStripMenuItem3
+            // 
+            this.cadastrarToolStripMenuItem3.Name = "cadastrarToolStripMenuItem3";
+            this.cadastrarToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem3.Text = "Cadastrar";
+            this.cadastrarToolStripMenuItem3.Click += new System.EventHandler(this.cadastrarToolStripMenuItem3_Click);
+            // 
             // ajudaToolStripMenuItem
             // 
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
@@ -225,13 +247,39 @@
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // dtgConsultasAgendadas
+            // 
+            this.dtgConsultasAgendadas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgConsultasAgendadas.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dtgConsultasAgendadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgConsultasAgendadas.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.dtgConsultasAgendadas.Location = new System.Drawing.Point(354, 67);
+            this.dtgConsultasAgendadas.Name = "dtgConsultasAgendadas";
+            this.dtgConsultasAgendadas.Size = new System.Drawing.Size(365, 290);
+            this.dtgConsultasAgendadas.TabIndex = 101;
+            this.dtgConsultasAgendadas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgConsultasAgendadas_CellContentClick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
+            this.label2.Location = new System.Drawing.Point(448, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 23);
+            this.label2.TabIndex = 102;
+            this.label2.Text = "Consultas Agendadas:";
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.fundo;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.images;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dtgConsultasAgendadas);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.dtgVacinas);
             this.Controls.Add(this.label6);
@@ -249,6 +297,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgVacinas)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgConsultasAgendadas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,5 +323,9 @@
         private System.Windows.Forms.ToolStripMenuItem médicosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem consultasAgendadasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem3;
+        private System.Windows.Forms.DataGridView dtgConsultasAgendadas;
+        private System.Windows.Forms.Label label2;
     }
 }

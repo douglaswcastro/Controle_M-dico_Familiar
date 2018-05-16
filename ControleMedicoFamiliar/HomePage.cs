@@ -15,23 +15,13 @@ namespace ControleMedicoFamiliar
         #region Instancias
         RegistroVacina regVacina = new RegistroVacina();
         RegistroConsulta regConsulta = new RegistroConsulta();
+        ConsultaAgendada regConsultaAgendada = new ConsultaAgendada();
 
         #endregion
 
         public HomePage()
         {
             InitializeComponent();
-
-        }
-
-        #region Não usados
-        private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCadastrarMedico_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -45,7 +35,24 @@ namespace ControleMedicoFamiliar
             List<RegistroConsulta> listconsultas = new List<RegistroConsulta>();
             listconsultas = regConsulta.Listar();
             dtgConsultas.DataSource = listconsultas;
+
+            List<ConsultaAgendada> listConsultaAgendada = new List<ConsultaAgendada>();
+            listConsultaAgendada = regConsultaAgendada.Listar();
+            dtgConsultasAgendadas.DataSource = listConsultaAgendada;
         }
+
+        #region Não usados
+        private void btnCadastrarFamiliar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrarMedico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
 
         private void btnCadatrarVacina_Click(object sender, EventArgs e)
         {
@@ -148,6 +155,22 @@ namespace ControleMedicoFamiliar
             ListarMedicos form = new ListarMedicos();
             form.Show();
         }
+
+        private void consultasAgendadasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            CadastroConsultaAgendada form = new CadastroConsultaAgendada();
+            form.Show();
+        }
         #endregion
+
+        private void dtgConsultasAgendadas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
