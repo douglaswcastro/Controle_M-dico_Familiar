@@ -35,16 +35,33 @@ namespace ControleMedicoFamiliar
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            string Pessoa = cbFamiliar.SelectedItem.ToString();
-            string Medico = cbMedicos.SelectedItem.ToString();
-            DateTime Data = DateTime.Parse(txtData.Text);
+            if (cbFamiliar.SelectedItem.ToString() == "")
+            {
+                MessageBox.Show("Por favor selecione uma pessoa.");
+            }
+            else if (cbMedicos.SelectedItem.ToString() == "")
+            {
+                MessageBox.Show("Por favor selecione o médico");
+            }
+            else
+            {
+                string Pessoa = cbFamiliar.SelectedItem.ToString();
+                string Medico = cbMedicos.SelectedItem.ToString();
+                string Data = txtData.Text;
+                consulta.Adicionar(Pessoa, Medico, Data);
+                MessageBox.Show("Consulta Agendada");
+                cbFamiliar.Text = "";
+                cbMedicos.Text = "";
+                txtData.Text = "";
+            }
 
-            consulta.Adicionar(Pessoa, Medico, Data);
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+            HomePage home = new HomePage();
+            home.Show();
         }
     }
 }

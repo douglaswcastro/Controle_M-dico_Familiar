@@ -52,7 +52,7 @@
             this.btnFechar.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.cancel_1294426_960_720;
             this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFechar.Location = new System.Drawing.Point(357, 430);
+            this.btnFechar.Location = new System.Drawing.Point(357, 332);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(42, 37);
             this.btnFechar.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.depositphotos_10595408_stock_photo_white_show_room_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(411, 479);
+            this.ClientSize = new System.Drawing.Size(411, 389);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;

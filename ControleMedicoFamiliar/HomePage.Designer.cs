@@ -104,7 +104,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.familiaresToolStripMenuItem,
             this.vacinasToolStripMenuItem,
@@ -223,7 +223,7 @@
             // cadastrarToolStripMenuItem3
             // 
             this.cadastrarToolStripMenuItem3.Name = "cadastrarToolStripMenuItem3";
-            this.cadastrarToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.cadastrarToolStripMenuItem3.Size = new System.Drawing.Size(124, 22);
             this.cadastrarToolStripMenuItem3.Text = "Cadastrar";
             this.cadastrarToolStripMenuItem3.Click += new System.EventHandler(this.cadastrarToolStripMenuItem3_Click);
             // 
@@ -264,7 +264,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 15.75F);
-            this.label2.Location = new System.Drawing.Point(448, 41);
+            this.label2.Location = new System.Drawing.Point(450, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(201, 23);
             this.label2.TabIndex = 102;
@@ -275,7 +275,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.images;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.fundo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(731, 412);
             this.Controls.Add(this.label2);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroConsultaAgendada));
             this.cbMedicos = new System.Windows.Forms.ComboBox();
             this.cbFamiliar = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,7 +36,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtData = new DevExpress.XtraEditors.DateEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtData.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtData.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // cbMedicos
@@ -126,16 +129,23 @@
             // 
             // txtData
             // 
-            this.txtData.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.txtData.Location = new System.Drawing.Point(13, 149);
+            this.txtData.EditValue = null;
+            this.txtData.Location = new System.Drawing.Point(13, 158);
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(453, 26);
-            this.txtData.TabIndex = 37;
+            this.txtData.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtData.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtData.Properties.Mask.EditMask = "D";
+            this.txtData.Size = new System.Drawing.Size(452, 20);
+            this.txtData.TabIndex = 38;
             // 
             // CadastroConsultaAgendada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ControleMedicoFamiliar.Properties.Resources.fundo;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(477, 239);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.label1);
@@ -145,8 +155,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCadastrar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroConsultaAgendada";
             this.Text = "CadastroConsultaAgendada";
+            ((System.ComponentModel.ISupportInitialize)(this.txtData.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtData.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +174,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtData;
+        private DevExpress.XtraEditors.DateEdit txtData;
     }
 }

@@ -164,6 +164,7 @@ namespace ControleMedicoFamiliar
         private void cadastrarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             CadastroConsultaAgendada form = new CadastroConsultaAgendada();
+            this.Hide();
             form.Show();
         }
         #endregion

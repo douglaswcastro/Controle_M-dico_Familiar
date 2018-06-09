@@ -11,13 +11,13 @@ namespace ControleMedicoFamiliar
         public string Pessoa { get; set; }
         public string Medico { get; set; }
 
-        public DateTime Data { get; set; }
+        public string Data { get; set; }
 
-        public List<ConsultaAgendada> listConsultasAgendadas = new List<ConsultaAgendada>();
+        public static List<ConsultaAgendada> listConsultasAgendadas = new List<ConsultaAgendada>();
 
-        public void Adicionar(string familiar, string medico, DateTime data)
+        public void Adicionar(string familiar, string medico, string data)
         {
-            listConsultasAgendadas.Add(new ConsultaAgendada() { Medico = medico, Pessoa = familiar, Data =  data});
+            listConsultasAgendadas.Add(new ConsultaAgendada { Medico = medico, Pessoa = familiar, Data =  data});
         }
 
         public List<ConsultaAgendada> Listar() => listConsultasAgendadas;

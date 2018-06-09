@@ -75,3 +75,4 @@ C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\Co
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\bin\Debug\ru\DevExpress.Pdf.v17.2.Core.resources.dll
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.CadastroConsultaAgendada.resources
 C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.ConsultasAgendadas.resources
+C:\Users\dougl\Documents\Visual Studio 2017\Projects\Controle_Medico_Familiar\ControleMedicoFamiliar\obj\Debug\ControleMedicoFamiliar.exe.licenses
