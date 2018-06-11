@@ -1,4 +1,4 @@
-# Controle_Medico_Familiar
+# Controle Médico Familiar
 Aplicação C# para controle médico familiar
 
 Aplicação desenvolvida para projeto da matéria Interação Humano-Computador, curso Sistemas de Informação<br> 
